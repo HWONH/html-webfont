@@ -1,0 +1,39 @@
+@charset "utf-8";
+@font-face{
+    font-family: NotoSansKR;
+    font-weight: 400;
+    font-style: normal;
+    src: url("../../../fonts/NotoSansKR-Regular.eot"); /* ie9호환성모드 용도 */
+    src : local("Noto Sans KR"), /* 사용자 > 제어판 > 글꼴을 표현 */
+    url("../../../fonts/NotoSansKR-Regular.eot#iefix") format("embedded-opentype"), /* ie6~8 제어 */
+    url("../../../fonts/NotoSansKR-Regular.woff2") format("woff2"),
+    url("../../../fonts/NotoSansKR-Regular.woff") format("woff"),
+    url("../../../fonts/NotoSansKR-Regular.otf") format("opentype");
+}
+@font-face{
+    font-family: NotoSansKR;
+    font-weight: 700;
+    font-style: normal;
+    src: url("../../../fonts/NotoSansKR-Bold.eot");
+    src : local("Noto Sans KR"),
+    url("../../../fonts/NotoSansKR-Bold.eot#iefix") format("embedded-opentype"),
+    url("../../../fonts/NotoSansKR-Bold.woff2") format("woff2"),
+    url("../../../fonts/NotoSansKR-Bold.woff") format("woff"),
+    url("../../../fonts/NotoSansKR-Bold.otf") format("opentype");
+}
+
+/* 
+웹폰트 : 사용자의 컴퓨터에 설치되어 있지 않은 글꼴을 표현한다
+ie6~8 : eot
+ie9+, 크롬, 오페라, 사파리, 파이어폭스 : woff2 -> woff -> ttf / otf
+
+format 형식 : 지원하지 않는 글꼴을 다운받지 않게 한다
+eot : embedded-opentype
+woff2 : woff2
+woff : woff
+ttf : truetype OR otf : opentype (둘 중 하나만 선언)
+*/
+
+body{font-family: "맑은 고딕", "Malgun Gothic"; font-size: 30px;}
+.webfont1{font-family: NotoSansKR; font-weight: 400;}
+.webfont2{font-family: NotoSansKR; font-weight: 700; color: blue;}
