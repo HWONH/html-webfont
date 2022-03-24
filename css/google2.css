@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* @import url('https://fonts.googleapis.com/css2?family=Hi+Melody&family=Roboto+Mono:wght@300;400;700&display=swap');
+html의 link 태그와 css의 @import 둘 중 하나만 선택한다 */
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+KR:regular,700);
+
+.default{font-size: 30px; color: #f00;}
+.font2_1{font-size: 40px; color: #008000; font-family: "Roboto Mono";}
+.font2_2{font-size: 40px; color: #0000ff; font-family: "Hi Melody";}
+.vscode{color: #ffa500;font-family: "Noto Sans KR"; font-weight: 700;}
